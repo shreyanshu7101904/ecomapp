@@ -1,0 +1,25 @@
+{% extends 'index.html'%}
+{% block content %}
+<div class="content-wrapper">
+<div class="card card-primary">
+    <div class="card-header">
+    <h3 class="card-title">Quick Example</h3>
+    </div>
+    
+   
+    <form action="" method="post">
+        {% csrf_token %}
+    <div class="card-body">
+    <div class="form-group">
+    <label for="exampleInputEmail1">{{form.prod.label}}</label>
+    {{form.as_p}}
+    </div>
+    </div>
+    
+    <div class="card-footer">
+    <input type="submit" class="btn btn-primary" value="submit">
+    </div>
+    </form>
+    </div>
+</div>
+{% endblock %}
